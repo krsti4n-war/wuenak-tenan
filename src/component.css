@@ -1,0 +1,20 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.flexbox-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexbox-row {
+  display: flex;
+}
+
+.flexbox-column {
+  display: flex;
+  flex-direction: column;
+}
