@@ -7,7 +7,7 @@
   </head>
   <body>
     <header id="header">
-      <nav class="flexbox-space-between">
+      <nav class="flexbox-space-between flexbox-vcenter">
         <object type="image/svg+xml" data="<%=require('./logo.svg')%>" id="logo-header">
           Wuenak Tenan
         </object>
@@ -20,12 +20,31 @@
       </nav>
       <h1 id="WOTD" class="flexbox-center">Perut Kenyang,<br/>Dompet Aman</h1>
     </header>
-    <article id="recommendation">
-      <h1>Menu rekomendasi hari ini</h1>
+    <article id="recommendation" class="flexbox-center">
       <div>
-        <picture>
-          <img>
-        </picture>
+        <h1>Menu rekomendasi hari ini</h1>
+        <div id="recommendation-container" class="flexbox-wrap flexbox-space-between">
+          <div class="recommendation-item">
+            <img src="<%=require('./menu_recc1.png')%>"/>
+            <h3>Nasi Gorent Ayam</h3>
+          </div>
+          <div class="recommendation-item">
+            <img src="<%=require('./menu_recc1.png')%>"/>
+            <h3>Nasi Gorent Ayam</h3>
+          </div>
+          <div class="recommendation-item">
+            <img src="<%=require('./menu_recc1.png')%>"/>
+            <h3>Nasi Gorent Ayam</h3>
+          </div>
+          <div class="recommendation-item">
+            <img src="<%=require('./menu_recc1.png')%>"/>
+            <h3>Nasi Gorent Ayam</h3>
+          </div>
+          <div class="recommendation-item">
+            <img src="<%=require('./menu_recc1.png')%>"/>
+            <h3>Nasi Gorent Ayam</h3>
+          </div>
+        </div>
       </div>
     </article>
     <article id="menu">

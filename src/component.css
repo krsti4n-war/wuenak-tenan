@@ -10,10 +10,19 @@
   align-items: center;
 }
 
+.flexbox-vcenter {
+  display: flex;
+  align-items: center;
+}
+
+.flexbox-hcenter{
+  display: flex;
+  justify-content: center;
+}
+
 .flexbox-space-between {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .flexbox-row {
@@ -23,4 +32,9 @@
 .flexbox-column {
   display: flex;
   flex-direction: column;
+}
+
+.flexbox-wrap {
+  display: flex;
+  flex-wrap: wrap;
 }
