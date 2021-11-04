@@ -10,6 +10,12 @@
   align-items: center;
 }
 
+.flexbox-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .flexbox-row {
   display: flex;
 }

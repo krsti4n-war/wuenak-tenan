@@ -20,8 +20,19 @@ const modules = {
     },
     {
       test: /\.(png|svg|jpg|jpeg|gif)$/i,
-      type: 'asset/resource',
-    },
+      type: "asset/resource",
+    }, 
+    /*
+    {
+      test: /\.html$/i,
+      use: {
+        loader: "html-loader",
+        options: {
+          interpolate: true
+        }
+      }
+    }
+    */
   ],
 }
 

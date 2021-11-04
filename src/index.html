@@ -7,17 +7,26 @@
   </head>
   <body>
     <header id="header">
-      <nav>
-        <img id="logo-header"/>
-        <a>About Us</a>
-        <a>Menu</a>
-        <a>Order Status</a>
-        <a>Contact Us</a>
+      <nav class="flexbox-space-between">
+        <object type="image/svg+xml" data="<%=require('./logo.svg')%>" id="logo-header">
+          Wuenak Tenan
+        </object>
+        <div class="nav-links flexbox-space-between">
+          <a>About Us</a>
+          <a>Menu</a>
+          <a>Order Status</a>
+          <a>Contact Us</a>
+        </div>
       </nav>
-      <h1 id="WOTD">Perut Kenyang Dompet Aman</h1>
+      <h1 id="WOTD" class="flexbox-center">Perut Kenyang,<br/>Dompet Aman</h1>
     </header>
     <article id="recommendation">
       <h1>Menu rekomendasi hari ini</h1>
+      <div>
+        <picture>
+          <img>
+        </picture>
+      </div>
     </article>
     <article id="menu">
       <div>

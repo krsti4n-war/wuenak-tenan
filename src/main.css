@@ -4,4 +4,21 @@
   background-size: cover;
 }
 
+#header {
+  padding-top: 30px;
+}
+
+#header > nav {
+  margin-left: 140px;
+  margin-right: 140px;
+}
+
+#header > #WOTD {
+  margin-top: 300px;  
+}
+
+#header > nav > .nav-links {
+  width: 500px;
+}
+
 
