@@ -38,3 +38,11 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.font-light {
+  color: #FFF;
+}
+
+.font-dark {
+  color: #000;
+}

@@ -22,7 +22,7 @@
 }
 
 #recommendation {
-  padding: 60px 150px; 
+  padding: 80px 150px; 
 }
 
 #recommendation > div > h1 {
@@ -34,3 +34,11 @@
   margin: 10px;
 }
 
+#menu {
+  max-height: 720px;
+}
+
+#menu > :nth-child(1) {
+  background-color: rgba(0, 0, 0, 0.8);
+  flex: 1;
+}
