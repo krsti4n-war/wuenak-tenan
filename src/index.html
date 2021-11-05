@@ -4,6 +4,7 @@
   <head>
     <title>Wuenak Tenan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%=require('html-loader!./fonts-link.html').default%>
   </head>
   <body>
     <header id="banner">
@@ -55,17 +56,7 @@
     <article id="reviews" class="flexbox-center flexbox-column">
       <h1>Review dari Pelanggan Kami</h1>
       <div id="review-container" class="flexbox-wrap flexbox-space-between">
-        <section>
-          <img src="<%=require('./reviewer1.png')%>">
-          <h3>Jefferson, <span class="reviewer-occupation">Mahasiswa</span></h3>
-          <p>Wuenak Tenan sudah membantu saya melewati masa sulit. Pola makan saya menjadi teratur dan juga sehat.</p>
-        </section>
-        <section>
-          <img src="<%=require('./reviewer1.png')%>">
-          <h3>Jefferson, <span class="reviewer-occupation">Mahasiswa</span></h3>
-          <p>Wuenak Tenan sudah membantu saya melewati masa sulit. Pola makan saya menjadi teratur dan juga sehat.</p>
-        </section>
-        <section>
+        <section class="review-item">
           <img src="<%=require('./reviewer1.png')%>">
           <h3>Jefferson, <span class="reviewer-occupation">Mahasiswa</span></h3>
           <p>Wuenak Tenan sudah membantu saya melewati masa sulit. Pola makan saya menjadi teratur dan juga sehat.</p>
@@ -75,7 +66,7 @@
     <footer id="footer">
       <hr/>
       <div class="flexbox-space-between">
-        <section class="flexbox-column flexbox-align-between">
+        <section id="contact-us" class="flexbox-column flexbox-align-between">
           <h4>Contact Us</h4>
           <p>081234567890</p>
           <p>wuenak.tenan@gmail.com</p>
@@ -84,7 +75,7 @@
         <object type="image/svg+xml" data="<%=require('./logo.svg')%>" id="logo-banner">
           Wuenak Tenan
         </object>
-        <section class="flexbox-column">
+        <section id="social-media-container" class="flexbox-column">
           <h4>Social Media</h4>
           <div class="social-media flexbox-row flexbox-vcenter">
             <img src="<%=require('./logo-ig.png')%>">

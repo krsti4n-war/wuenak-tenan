@@ -35,8 +35,17 @@
   margin: 10px;
 }
 
+#recommendation .recommendation-item > :first-child {
+  margin-bottom: 14px;
+}
+
 #menu {
   max-height: 720px;
+}
+
+#menu h1 {
+  width: 700px;
+  text-align: center;
 }
 
 #menu > :nth-child(1) {
@@ -57,6 +66,12 @@
   margin: 10px;
 }
 
+#reviews .review-item > p {
+  font-size: 24px; 
+  color: var(--dark-variant-font-color);
+  margin-top: 5px;
+}
+
 #footer > div {
   padding: 30px 0px;
 }
@@ -65,10 +80,19 @@
   width: 320px;
 }
 
-#footer > div > section > * {
-  margin-bottom: 20px;
+#footer section > h4 {
+  margin-bottom: 16px;
 }
 
+#footer #contact-us p {
+  font-size: 24px;
+  color: var(--dark-variant-font-color);
+}
 
+#footer #social-media-container p {
+  font-size: 24px;
+}
 
-
+#footer #social-media-container > div {
+  margin-bottom: 10px;
+}

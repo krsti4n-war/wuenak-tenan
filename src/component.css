@@ -1,7 +1,28 @@
+:root {
+  --light-font-color: #FFF;
+  --dark-font-color: #000;
+  --dark-variant-font-color: rgba(0,0,0, 0.5);
+}
+
+
 * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+  font-family: 'Fredoka One', cursive;
+}
+
+
+h1 {
+  font-size: 64px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+h4 {
+  font-size: 24px;
 }
 
 .flexbox-center {
@@ -45,11 +66,11 @@
 }
 
 .font-light {
-  color: #FFF;
+  color: var(--light-font-color);
 }
 
 .font-dark {
-  color: #000;
+  color: var(--dark-font-color);
 }
 
 .button-primary {
@@ -61,4 +82,9 @@
 
 .social-media > :nth-child(2) {
   margin-left: 10px;
+}
+
+.nav-links {
+  font-size: 18px;
+  color: var(--light-font-color);
 }
