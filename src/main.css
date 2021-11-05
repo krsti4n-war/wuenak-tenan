@@ -2,7 +2,7 @@
   --article-heading-margin-bottom: 40px;
 }
 
-#recommendation, #reviews, #footer {
+#recommendation, #reviews {
   padding: 80px 150px; 
 }
 
@@ -31,7 +31,11 @@
   margin-bottom: 60px;
 }
 
-#recommendation > #recommendation-container > * {
+#recommendation-container {
+  width: 1140px;
+}
+
+#recommendation-container > * {
   margin: 10px;
 }
 
@@ -70,6 +74,11 @@
   font-size: 24px; 
   color: var(--dark-variant-font-color);
   margin-top: 5px;
+}
+
+#footer {
+  padding: 0px 150px;
+  margin-bottom: 80px;
 }
 
 #footer > div {
