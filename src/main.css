@@ -2,6 +2,10 @@
   --article-heading-margin-bottom: 40px;
 }
 
+#recommendation, #reviews, #footer {
+  padding: 80px 150px; 
+}
+
 #banner {
   min-height: 1024px;
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("banner.png") no-repeat;
@@ -20,10 +24,6 @@
 
 #banner > #WOTD {
   margin-top: 300px;  
-}
-
-#recommendation {
-  padding: 80px 150px; 
 }
 
 #recommendation > h1 {
@@ -48,10 +48,6 @@
   margin-bottom: var(--article-heading-margin-bottom);
 }
 
-#reviews {
-  padding: 80px 150px; 
-}
-
 #reviews > h1 {
   margin-bottom: var(--article-heading-margin-bottom);
 }
@@ -60,4 +56,19 @@
   width: 420px;
   margin: 10px;
 }
+
+#footer > div {
+  padding: 30px 0px;
+}
+
+#footer > div > * {
+  width: 320px;
+}
+
+#footer > div > section > * {
+  margin-bottom: 20px;
+}
+
+
+
 

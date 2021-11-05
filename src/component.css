@@ -25,6 +25,11 @@
   justify-content: space-between;
 }
 
+.flexbox-align-between {
+  display: flex;
+  align-content: space-between;
+}
+
 .flexbox-row {
   display: flex;
 }
@@ -54,3 +59,6 @@
   font-size: 24px;
 }
 
+.social-media > :nth-child(2) {
+  margin-left: 10px;
+}
