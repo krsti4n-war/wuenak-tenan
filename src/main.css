@@ -1,3 +1,7 @@
+:root {
+  --article-heading-margin-bottom: 40px;
+}
+
 #banner {
   min-height: 1024px;
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("banner.png") no-repeat;
@@ -41,5 +45,19 @@
 }
 
 #menu > :nth-child(1) > h1 {
-  margin-bottom: 40px;
+  margin-bottom: var(--article-heading-margin-bottom);
 }
+
+#reviews {
+  padding: 80px 150px; 
+}
+
+#reviews > h1 {
+  margin-bottom: var(--article-heading-margin-bottom);
+}
+
+#reviews > #review-container > * {
+  width: 420px;
+  margin: 10px;
+}
+
