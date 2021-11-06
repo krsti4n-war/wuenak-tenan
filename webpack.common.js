@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const plugins = [
   new HtmlWebpackPlugin({
     template: './index.html',
-    inject: 'head',
+//    inject: 'head',
 //    favicon: './favicon.svg'
   }),
   new MiniCssExtractPlugin({
