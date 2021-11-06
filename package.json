@@ -15,6 +15,7 @@
   "scripts": {
     "build": "webpack --config webpack.dev.js",
     "publish": "webpack --config webpack.prod.js",
+    "docs": "webpack --config webpack.doc.js",
     "watch": "webpack --watch --config webpack.dev.js"
   },
   "author": "Muhammad Raznan",
