@@ -7,20 +7,7 @@
     <%=require('html-loader!./fonts-link.html').default%>
   </head>
   <body>
-    <header id="banner">
-      <nav class="flexbox-space-between flexbox-vcenter">
-        <object type="image/svg+xml" data="<%=require('./logo.svg')%>" id="logo-banner">
-          Wuenak Tenan
-        </object>
-        <div class="nav-links flexbox-space-between">
-          <a>About Us</a>
-          <a>Menu</a>
-          <a>Order Status</a>
-          <a>Contact Us</a>
-        </div>
-      </nav>
-      <h1 id="WOTD" class="flexbox-center font-light">Perut Kenyang,<br/>Dompet Aman</h1>
-    </header>
+    <main-header></main-header>
     <article id="recommendation" class="flexbox-center flexbox-column">
       <h1>Menu rekomendasi hari ini</h1>
       <div id="recommendation-container" class="flexbox-wrap flexbox-space-between">
