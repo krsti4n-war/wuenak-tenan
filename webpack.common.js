@@ -6,6 +6,7 @@ const plugins = [
   new HtmlWebpackPlugin({
     template: './index.html',
     //    favicon: './favicon.svg'
+    chunks: ["index", "component"]
   }),
   new HtmlWebpackPlugin({
     template: './menu.html',
@@ -27,14 +28,6 @@ const modules = {
       test: /\.(png|svg|jpg|jpeg|gif)$/i,
       type: "asset/resource",
     }, 
-    /*
-    {
-      test: /\.html$/i,
-      use: {
-        loader: "html-loader",
-      }
-    }
-    */
   ],
 }
 
@@ -42,8 +35,8 @@ module.exports = {
   plugins,
   context: path.resolve(__dirname, 'src'),
   entry: { 
-    main: ['./main.js', './main.css', './component.css'],
-    //menu: ['./main.js', './main.css', './component.css']
+    index: ["./index.css"],
+    component: ['./main.js', './component.css'],
   },
   /*
   output: {
