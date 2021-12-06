@@ -5,8 +5,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const plugins = [
   new HtmlWebpackPlugin({
     template: './index.html',
-//    inject: 'head',
-//    favicon: './favicon.svg'
+    //    favicon: './favicon.svg'
+  }),
+  new HtmlWebpackPlugin({
+    template: './menu.html',
+    filename: "menu.html"
+    //    favicon: './favicon.svg'
   }),
   new MiniCssExtractPlugin({
     filename: '[name].[contenthash].css',
@@ -39,6 +43,7 @@ module.exports = {
   context: path.resolve(__dirname, 'src'),
   entry: { 
     main: ['./main.js', './main.css', './component.css'],
+    //menu: ['./main.js', './main.css', './component.css']
   },
   /*
   output: {

@@ -3,23 +3,36 @@ import LineLogo from './logo-ln.png';
 import FacebookLogo from './logo-fb.png';
 import InstagramLogo from './logo-ig.png';
 
+class HeaderNav extends HTMLElement {
+  constructor() {
+    super();
+    this.wrapper = document.createElement('div');
+    this.wrapper.innerHTML = `
+        <nav class="flexbox-space-between flexbox-vcenter">
+          <object type="image/svg+xml" data="${WebLogo}" id="logo-banner">
+            Wuenak Tenan
+          </object>
+          <div class="nav-links flexbox-space-between">
+            <a>About Us</a>
+            <a>Menu</a>
+            <a>Order Status</a>
+            <a>Contact Us</a>
+          </div>
+        </nav>
+    `;
+
+    this.appendChild(this.wrapper);
+  }
+};
+
+
 class Header extends HTMLElement {
   constructor() {
     super();
     this.wrapper = document.createElement('div');
     this.wrapper.innerHTML = `
         <header id="banner">
-          <nav class="flexbox-space-between flexbox-vcenter">
-            <object type="image/svg+xml" data="${WebLogo}" id="logo-banner">
-              Wuenak Tenan
-            </object>
-            <div class="nav-links flexbox-space-between">
-              <a>About Us</a>
-              <a>Menu</a>
-              <a>Order Status</a>
-              <a>Contact Us</a>
-            </div>
-          </nav>
+          <main-nav></main-nav>
           <h1 id="WOTD" class="flexbox-center font-light">Perut Kenyang,<br/>Dompet Aman</h1>
         </header>
     `;
@@ -69,6 +82,6 @@ class Footer extends HTMLElement {
   }
 }
 
-
+customElements.define("main-nav", HeaderNav);
 customElements.define('main-header', Header);
 customElements.define('main-footer', Footer);
