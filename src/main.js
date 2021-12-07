@@ -4,10 +4,6 @@ import LineLogo from './logo-ln.png';
 import FacebookLogo from './logo-fb.png';
 import InstagramLogo from './logo-ig.png';
 
-
-// Menus
-import MenuAImage from './menu_a.png';
-
 class HeaderNav extends HTMLElement {
   constructor() {
     super();
@@ -94,10 +90,10 @@ class MenuBundle extends HTMLElement {
     this.wrapper = document.createElement("div");
     this.wrapper.innerHTML = `
       <section class="package-bundle flexbox-row">
-        <img src="${MenuAImage}">
+        <img src="${this.getAttribute("thumbnail")}">
         <div class="flexbox-column">
-          <h3>hello</h3>
-          <p>hewwo</p>
+          <h3>${this.getAttribute("title")}</h3>
+          <p>${this.textContent}</p>
         </div>
         <button class="button-primary">
           Add to Cart
@@ -105,6 +101,8 @@ class MenuBundle extends HTMLElement {
       </section>
     `;
 
+    console.log(this.attributes);
+    this.textContent = "";
     this.appendChild(this.wrapper);
   }
 }
