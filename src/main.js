@@ -1,7 +1,12 @@
+// Logo
 import WebLogo from './logo.svg';
 import LineLogo from './logo-ln.png';
 import FacebookLogo from './logo-fb.png';
 import InstagramLogo from './logo-ig.png';
+
+
+// Menus
+import MenuAImage from './menu_a.png';
 
 class HeaderNav extends HTMLElement {
   constructor() {
@@ -14,7 +19,7 @@ class HeaderNav extends HTMLElement {
           </object>
           <div class="nav-links flexbox-space-between">
             <a>About Us</a>
-            <a>Menu</a>
+            <a href="./menu.html">Menu</a>
             <a>Order Status</a>
             <a>Contact Us</a>
           </div>
@@ -82,6 +87,34 @@ class Footer extends HTMLElement {
   }
 }
 
-customElements.define("main-nav", HeaderNav);
-customElements.define('main-header', Header);
-customElements.define('main-footer', Footer);
+
+class MenuBundle extends HTMLElement {
+  constructor() {
+    super();
+    this.wrapper = document.createElement("div");
+    this.wrapper.innerHTML = `
+      <section class="package-bundle flexbox-row">
+        <img src="${MenuAImage}">
+        <div class="flexbox-column">
+          <h3>hello</h3>
+          <p>hewwo</p>
+        </div>
+        <button class="button-primary">
+          Add to Cart
+        </button>
+      </section>
+    `;
+
+    this.appendChild(this.wrapper);
+  }
+}
+
+
+if(!customElements.get("menu-bundle"))
+  customElements.define("menu-bundle", MenuBundle);
+if(!customElements.get("main-nav"))
+  customElements.define("main-nav", HeaderNav);
+if(!customElements.get("main-header"))
+  customElements.define("main-header", Header);
+if(!customElements.get("main-footer"))
+  customElements.define("main-footer", Footer);

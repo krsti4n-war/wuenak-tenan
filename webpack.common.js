@@ -10,8 +10,9 @@ const plugins = [
   }),
   new HtmlWebpackPlugin({
     template: './menu.html',
-    filename: "menu.html"
+    filename: "menu.html",
     //    favicon: './favicon.svg'
+    chunks: ["menu" ,"component"]
   }),
   new MiniCssExtractPlugin({
     filename: '[name].[contenthash].css',
@@ -35,8 +36,9 @@ module.exports = {
   plugins,
   context: path.resolve(__dirname, 'src'),
   entry: { 
-    index: ["./index.css"],
     component: ['./main.js', './component.css'],
+    index: ["./index.css"],
+    menu: ["./menu.css"]
   },
   /*
   output: {

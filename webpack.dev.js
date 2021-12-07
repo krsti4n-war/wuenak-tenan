@@ -13,6 +13,6 @@ module.exports = merge(common, {
   },
   output: {
     pathinfo: false,
-    clean: true
+    clean: false
   }
 });

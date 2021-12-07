@@ -1,0 +1,26 @@
+.package-bundle {
+    max-height: 360px;
+    margin-bottom: 60px;
+}
+
+.package-bundle:last-child {
+    margin-bottom: 80px;
+}
+
+/* inbetween gap */
+.package-bundle > * {
+    margin-right: 60px;
+}
+.package-bundle > *:last-child {
+    /* ignore last element */
+    margin-right: 0px;
+}
+
+.package-bundle p {
+    font-size: 24px;
+    color: #5F5B5B;
+}
+
+.package-bundle button {
+    height: 60px;
+}
