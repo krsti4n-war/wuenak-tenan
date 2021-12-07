@@ -44,3 +44,9 @@ main {
 .package-bundle button {
     height: 60px;
 }
+
+
+
+c-placard > * {
+    margin-bottom: 80px;;
+}
