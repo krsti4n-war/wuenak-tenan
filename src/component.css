@@ -113,6 +113,27 @@ h4 {
 
 
 
+c-placard {
+  max-height: 720px;
+}
+
+c-placard h1 {
+  width: 700px;
+  text-align: center;
+}
+
+c-placard article > :nth-child(1) {
+  background-color: rgba(0, 0, 0, 0.8);
+  flex: 1;
+}
+
+c-placard article > :nth-child(1) > h1 {
+  margin-bottom: var(--article-heading-margin-bottom);
+}
+
+
+
+
 #footer {
   padding: 0px 150px;
   margin-bottom: 80px;

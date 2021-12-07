@@ -4,6 +4,7 @@ import LineLogo from './logo-ln.png';
 import FacebookLogo from './logo-fb.png';
 import InstagramLogo from './logo-ig.png';
 
+
 class HeaderNav extends HTMLElement {
   constructor() {
     super();
@@ -41,7 +42,7 @@ class Header extends HTMLElement {
 
     this.appendChild(this.wrapper);
   }
-}
+};
 
 
 class Footer extends HTMLElement {
@@ -82,7 +83,7 @@ class Footer extends HTMLElement {
       `;
     this.appendChild(this.wrapper);
   }
-}
+};
 
 
 class MenuBundle extends HTMLElement {
@@ -95,7 +96,7 @@ class MenuBundle extends HTMLElement {
         <div class="flexbox-row">
           <div class="flexbox-column">
             <h3>${this.getAttribute("title")}</h3>
-            <p>${this.textContent}</p>
+            <p>${this.innerText}</p>
           </div>
           <button class="button-primary">
             Add to Cart
@@ -104,10 +105,30 @@ class MenuBundle extends HTMLElement {
       </section>
     `;
 
-    this.textContent = "";
+    this.innerText = "";
     this.appendChild(this.wrapper);
   }
-}
+};
+
+
+class Placard extends HTMLElement {
+  constructor() {
+    super();
+    this.wrapper = document.createElement('div');
+    this.wrapper.innerHTML = `
+      <article class="flexbox-row">
+        <div class="flexbox-center flexbox-column">
+          <h1 class="font-light">${this.innerText}</h1>
+          <a class="button-primary">Lihat Menu</a>
+        </div>
+        <img src="${this.getAttribute("img")}">
+      </article>
+    `;
+
+    this.innerText = "";
+    this.appendChild(this.wrapper);
+  }
+};
 
 
 if(!customElements.get("menu-bundle"))
@@ -118,3 +139,5 @@ if(!customElements.get("main-header"))
   customElements.define("main-header", Header);
 if(!customElements.get("main-footer"))
   customElements.define("main-footer", Footer);
+if(!customElements.get("c-placard"))
+  customElements.define("c-placard", Placard);
