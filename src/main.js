@@ -8,6 +8,7 @@ class HeaderNav extends HTMLElement {
   constructor() {
     super();
     this.wrapper = document.createElement('div');
+    this.wrapper.className = this.getAttribute("class");
     this.wrapper.innerHTML = `
         <nav class="flexbox-space-between flexbox-vcenter">
           <object type="image/svg+xml" data="${WebLogo}" id="logo-banner">

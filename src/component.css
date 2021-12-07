@@ -4,12 +4,20 @@
   --dark-variant-font-color: rgba(0,0,0, 0.5);
 }
 
-
 * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
   font-family: 'Fredoka One', cursive;
+}
+
+main-nav nav {
+  margin-left: 140px;
+  margin-right: 140px;
+}
+
+main-nav nav .nav-links {
+  width: 500px;
 }
 
 
@@ -90,4 +98,14 @@ h4 {
 .nav-links {
   font-size: 18px;
   color: var(--light-font-color);
+}
+
+
+/* VARIANT CLASSES */
+.light-theme h1, .light-theme p, .light-theme a {
+  color: var(--light-font-color);
+}
+
+.dark-theme h1, .light-theme p, .light-theme a {
+  color: var(--dark-font-color);
 }
