@@ -7,12 +7,18 @@
     <%=require('html-loader!./fonts-link.html').default%>
   </head>
   <body>
-    <main-nav class="light-theme"></main-nav>
-    <article>
+    <header>
+      <main-nav class="light-theme"></main-nav>
+    </header>
+    <main>
+      <div id="menu-heading" class="flexbox-row flexbox-vcenter flexbox-space-between">
+        <h1>Menu Paketan</h1>
+        <h4>11 September 2021 - 16 September 2021</h4>
+      </div>
       <menu-bundle thumbnail="<%=require('./menu_a.png')%>" title="Hello!">
         no!
       </menu-bundle>
-    </article>
+    </main>
     <main-footer></main-footer>
   </body>
 </html>

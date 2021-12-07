@@ -92,17 +92,18 @@ class MenuBundle extends HTMLElement {
     this.wrapper.innerHTML = `
       <section class="package-bundle flexbox-row">
         <img src="${this.getAttribute("thumbnail")}">
-        <div class="flexbox-column">
-          <h3>${this.getAttribute("title")}</h3>
-          <p>${this.textContent}</p>
+        <div class="flexbox-row">
+          <div class="flexbox-column">
+            <h3>${this.getAttribute("title")}</h3>
+            <p>${this.textContent}</p>
+          </div>
+          <button class="button-primary">
+            Add to Cart
+          </button>
         </div>
-        <button class="button-primary">
-          Add to Cart
-        </button>
       </section>
     `;
 
-    console.log(this.attributes);
     this.textContent = "";
     this.appendChild(this.wrapper);
   }

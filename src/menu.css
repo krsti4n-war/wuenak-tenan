@@ -1,19 +1,40 @@
+header {
+    padding-top: 30px;
+    margin-bottom: 40px;
+}
+
+main {
+    padding: 0px 140px;
+}
+
+#menu-heading {
+    margin-bottom: 40px;
+}
+
 .package-bundle {
     max-height: 360px;
     margin-bottom: 60px;
+    --gap-margin: 60px;
 }
+
 .package-bundle:last-child {
     margin-bottom: 80px;
 }
 
-/* inbetween gap */
-.package-bundle > * {
-    margin-right: 60px;
-}
 .package-bundle > *:last-child {
-    /* ignore last element */
-    margin-right: 0px;
+    padding: 20px 0px;
 }
+
+
+/* inbetween gap */
+.package-bundle > *:last-child > *:first-child {
+    min-width: 300px;
+    margin-right: var(--gap-margin);
+}
+.package-bundle > img {
+    margin-right: var(--gap-margin);
+}
+
 
 .package-bundle p {
     font-size: 24px;

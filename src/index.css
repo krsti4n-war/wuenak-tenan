@@ -67,32 +67,4 @@
   margin-top: 5px;
 }
 
-#footer {
-  padding: 0px 150px;
-  margin-bottom: 80px;
-}
 
-#footer > div {
-  padding: 30px 0px;
-}
-
-#footer > div > * {
-  width: 320px;
-}
-
-#footer section > h4 {
-  margin-bottom: 16px;
-}
-
-#footer #contact-us p {
-  font-size: 24px;
-  color: var(--dark-variant-font-color);
-}
-
-#footer #social-media-container p {
-  font-size: 24px;
-}
-
-#footer #social-media-container > div {
-  margin-bottom: 10px;
-}
