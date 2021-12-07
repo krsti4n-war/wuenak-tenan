@@ -115,13 +115,23 @@ class Placard extends HTMLElement {
   constructor() {
     super();
     this.wrapper = document.createElement('div');
+  
+    const asideNodeText = `
+      <div class="flexbox-center flexbox-column">
+        <h1 class="font-light">${this.innerText}</h1>
+        <a class="button-primary">Lihat Menu</a>
+      </div>
+    `;
+
+    const imgNodeText = `
+      <img src="${this.getAttribute("img")}">
+    `
+
+    // These conditions are set up loosely cuz am lazy. I'll change it if I hit any weird issues.
     this.wrapper.innerHTML = `
       <article class="flexbox-row">
-        <div class="flexbox-center flexbox-column">
-          <h1 class="font-light">${this.innerText}</h1>
-          <a class="button-primary">Lihat Menu</a>
-        </div>
-        <img src="${this.getAttribute("img")}">
+        ${!this.getAttribute('direction') ? asideNodeText : imgNodeText}
+        ${!this.getAttribute('direction') ? imgNodeText : asideNodeText}
       </article>
     `;
 
