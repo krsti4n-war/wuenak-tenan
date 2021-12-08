@@ -14,14 +14,16 @@ class HeaderNav extends HTMLElement {
         this.wrapper.className = this.getAttribute("class");
         this.wrapper.innerHTML = `
             <nav class="flexbox-space-between flexbox-vcenter">
-                <object type="image/svg+xml" data="${WebLogo}" id="logo-banner">
-                    Wuenak Tenan
-                </object>
-                <div class="nav-links flexbox-space-between">
-                    <a>About Us</a>
-                    <a href="./menu.html">Menu</a>
-                    <a>Order Status</a>
-                    <a>Contact Us</a>
+                <a href="./index.html">
+                    <object style="pointer-events: none;" type="image/svg+xml" data="${WebLogo}" id="logo-banner">
+                        Wuenak Tenan
+                    </object>
+                </a>
+                <div class="link-container flexbox-space-between">
+                    <a class="nav-link">About Us</a>
+                    <a class="nav-link" href="./menu.html">Menu</a>
+                    <a class="nav-link">Order Status</a>
+                    <a class="nav-link">Contact Us</a>
                 </div>
             </nav>
         `;
