@@ -1,0 +1,170 @@
+:root {
+  --light-font-color: #fff;
+  --dark-font-color: #000;
+  --dark-variant-font-color: rgba(0, 0, 0, 0.5);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Fredoka One", cursive;
+}
+
+main-nav nav {
+  margin-left: 140px;
+  margin-right: 140px;
+}
+
+main-nav nav .link-container {
+  width: 500px;
+  font-size: 18px;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.nav-link,
+.nav-link:visited {
+  color: var(--light-font-color);
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+.flexbox-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexbox-vcenter {
+  display: flex;
+  align-items: center;
+}
+
+.flexbox-hcenter {
+  display: flex;
+  justify-content: center;
+}
+
+.flexbox-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flexbox-align-between {
+  display: flex;
+  align-content: space-between;
+}
+
+.flexbox-row {
+  display: flex;
+}
+
+.flexbox-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexbox-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.font-light {
+  color: var(--light-font-color);
+}
+
+.font-dark {
+  color: var(--dark-font-color);
+}
+
+.button-primary {
+  padding: 15px 28px;
+  background-color: #e29360;
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  border: none;
+  text-align: center;
+}
+
+.social-media > :nth-child(2) {
+  margin-left: 10px;
+}
+
+/* VARIANT CLASSES */
+.dark-theme h1,
+.dark-theme p,
+.dark-theme a,
+.dark-theme .nav-link,
+.dark-theme .nav-link:visited {
+  color: var(--light-font-color);
+}
+
+.light-theme h1,
+.light-theme p,
+.light-theme a,
+.light-theme .nav-link,
+.light-theme .nav-link:visited {
+  color: var(--dark-font-color);
+}
+
+c-placard {
+  max-height: 720px;
+}
+
+c-placard article > div {
+  background-color: rgba(0, 0, 0, 0.8);
+  flex: 1;
+}
+
+c-placard article > div > h1 {
+  width: 700px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#footer {
+  padding: 0px 150px;
+  margin-bottom: 80px;
+}
+
+#footer > div {
+  padding: 30px 0px;
+}
+
+#footer > div > * {
+  width: 320px;
+}
+
+#footer section > h4 {
+  margin-bottom: 16px;
+}
+
+#footer #contact-us p {
+  font-size: 24px;
+  color: var(--dark-variant-font-color);
+}
+
+#footer #social-media-container p {
+  font-size: 24px;
+}
+
+#footer #social-media-container > div {
+  margin-bottom: 10px;
+}
+
+
+/*# sourceMappingURL=component.8b4e1d8963cc41cf506d.css.map*/

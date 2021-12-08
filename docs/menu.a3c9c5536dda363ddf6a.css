@@ -1,0 +1,56 @@
+header {
+    padding-top: 30px;
+    margin-bottom: 80px;
+}
+
+main {
+    padding: 0px 140px;
+    margin-bottom: 80px;
+}
+
+#menu-heading {
+    margin-bottom: 40px;
+}
+
+.package-bundle {
+    max-height: 360px;
+    margin-bottom: 60px;
+    --gap-margin: 60px;
+}
+
+.package-bundle {
+    margin-bottom: 80px;
+}
+
+.package-bundle > *:last-child {
+    padding: 20px 0px;
+}
+
+
+/* inbetween gap */
+.package-bundle > *:last-child > *:first-child {
+    min-width: 300px;
+    margin-right: var(--gap-margin);
+}
+.package-bundle > img {
+    margin-right: var(--gap-margin);
+}
+
+
+
+.package-bundle p {
+    font-size: 24px;
+    color: #5F5B5B;
+}
+
+.package-bundle button {
+    height: 60px;
+}
+
+
+
+c-placard > * {
+    margin-bottom: 80px;;
+}
+
+/*# sourceMappingURL=menu.a3c9c5536dda363ddf6a.css.map*/
