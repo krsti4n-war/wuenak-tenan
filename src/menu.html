@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
+
+<head>
     <title>Wuenak Tenan</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <%=require('html-loader!./fonts-link.html').default%>
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <main-nav class="light-theme"></main-nav>
+        <main-nav class="light-theme"></main-nav>
     </header>
     <main>
-      <div id="menu-heading" class="flexbox-row flexbox-vcenter flexbox-space-between">
-        <h1>Menu Paketan</h1>
-        <h4>11 September 2021 - 16 September 2021</h4>
-      </div>
-      <menu-bundle thumbnail="<%=require('./menu_a.png')%>" title="Hello!">
-        no!
-      </menu-bundle>
-      <menu-bundle thumbnail="<%=require('./menu_a.png')%>" title="Hello!">
-        no!
-      </menu-bundle>
-      <menu-bundle thumbnail="<%=require('./menu_a.png')%>" title="Hello!">
-        no!
-      </menu-bundle>
+        <div id="menu-heading" class="flexbox-row flexbox-vcenter flexbox-space-between">
+            <h1>Menu Paketan</h1>
+            <h4>11 September 2021 - 16 September 2021</h4>
+        </div>
+        <menu-bundle thumbnail="<%=require('./menu_a.png')%>" title="Hello!">
+            no!
+        </menu-bundle>
+        <menu-bundle thumbnail="<%=require('./menu_a.png')%>" title="Hello!">
+            no!
+        </menu-bundle>
+        <menu-bundle thumbnail="<%=require('./menu_a.png')%>" title="Hello!">
+            no!
+        </menu-bundle>
     </main>
-    <c-placard img="<%=require('./burger.png')%>" direction="right">
-      Kurang yakin dengan<br/>menu rekomendasi kami?
+    <c-placard img="<%=require('./burger.png')%>" direction="right" href="./custom-menu.html">
+        Kurang yakin dengan<br />menu rekomendasi kami?
     </c-placard>
     <main-footer></main-footer>
-  </body>
+</body>
+
 </html>

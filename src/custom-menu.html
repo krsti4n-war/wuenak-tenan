@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Wuenak Tenan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <%=require('html-loader!./fonts-link.html').default%>
+</head>
+
+<body>
+    <header>
+        <main-nav class="light-theme"></main-nav>
+    </header>
+    <main>
+        <div id="menu-heading" class="flexbox-row flexbox-vcenter flexbox-space-between">
+            <h1>Menu Rancangan</h1>
+            <h4>11 September 2021 - 16 September 2021</h4>
+        </div>
+        <item-group class="food-option flexbox-column" max="2">
+            <h3>Karbohidrat (maks 2)</h3>
+            <button>Nasi Putih</button>
+            <button>Kentang Rebus</button>
+            <button>Bakmi Goreng</button>
+        </item-group>
+        <item-group class="food-option flexbox-column" max="1">
+            <h3>Protein (maks 1)</h3>
+            <button>Ayam Goreng</button>
+            <button>Sapi Lada Hitam</button>
+        </item-group>
+        <item-group class="food-option flexbox-column" max="1">
+            <h3>Sayur (maks 2)</h3>
+            <button>Cap Cay</button>
+            <button>Tumis Kangkung Terasi</button>
+            <button>Brokoli Cah Jamur</button>
+            <button>Bak Choy Saus Tiram</button>
+            <button>Toge Cah Ikan Asin</button>
+        </item-group>
+        <item-group class="food-option flexbox-column" max="1">
+            <h3>Desserts (maks 1)</h3>
+            <button>Roti Panggang Coklat Keju</button>
+            <button>Semangka dan Pepaya</button>
+            <button>Pudding Susu</button>
+        </item-group>
+        <section id="total-section">
+            <h2>Pesanan Custom Box-mu</h2>
+            <div class="flexbox-row flexbox-space-between">
+                <div>
+                    <h4>Custom Box</h5>
+                    <ul id="item-list"></ul>
+                </div>
+                <h4>$$$</h4>
+            </div>
+        </section>
+    </main>
+    <main-footer></main-footer>
+</body>
+
+</html>

@@ -6,13 +6,12 @@ module.exports = merge(common, {
   devtool: 'eval-source-map',
   optimization: {
     usedExports: true,
-    runtimeChunk: true,
     removeAvailableModules: false,
     removeEmptyChunks: false,
     splitChunks: false
   },
   output: {
     pathinfo: false,
-    clean: false
+    clean: true
   }
 });

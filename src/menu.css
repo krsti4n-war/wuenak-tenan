@@ -1,10 +1,11 @@
 header {
     padding-top: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 }
 
 main {
     padding: 0px 140px;
+    margin-bottom: 80px;
 }
 
 #menu-heading {
@@ -17,7 +18,7 @@ main {
     --gap-margin: 60px;
 }
 
-.package-bundle:last-child {
+.package-bundle {
     margin-bottom: 80px;
 }
 
@@ -34,6 +35,7 @@ main {
 .package-bundle > img {
     margin-right: var(--gap-margin);
 }
+
 
 
 .package-bundle p {
