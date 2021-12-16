@@ -38,12 +38,17 @@ class Header extends HTMLElement {
         super();
         this.wrapper = document.createElement('div');
         this.wrapper.innerHTML = `
-            <header id="banner">
+            <header id="banner"
+                style=\"
+                    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(\'${this.getAttribute('src')}\') no-repeat;
+                    background-size: cover; 
+                \">
                 <main-nav></main-nav>
-                <h1 id="WOTD" class="flexbox-center font-light">Perut Kenyang,<br/>Dompet Aman</h1>
+                <h1 id="WOTD" class="flexbox-center font-light">${this.innerHTML}</h1>
             </header>
         `;
 
+        this.innerHTML = "";
         this.appendChild(this.wrapper);
     }
 };

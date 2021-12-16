@@ -2,7 +2,8 @@ const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-const plugins = [
+
+const pages = [
     new HtmlWebpackPlugin({
         template: "./index.html",
         //    favicon: './favicon.svg'
@@ -19,9 +20,18 @@ const plugins = [
         filename: "custom-menu.html",
         chunks: ["custom_menu", "component"],
     }),
+    new HtmlWebpackPlugin({
+        template: "./contact-us.html",
+        filename: "contact-us.html",
+        chunks: ["component"],
+    }),
+]
+
+const plugins = [
+    ...pages,
     new MiniCssExtractPlugin({
         filename: "[name].[contenthash].css",
-    }),
+    })
 ];
 
 
@@ -35,6 +45,7 @@ module.exports = {
             "./menu_recc1.png",
             "./burger.png",
             "./reviewer1.png",
+            "./banner.png"
         ],
         menu: ["./menu.css", "./menu_a.png"],
         custom_menu: ["./custom_menu.js", "./custom_menu.css"],
