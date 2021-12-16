@@ -23,7 +23,7 @@ class HeaderNav extends HTMLElement {
                     <a class="nav-link">About Us</a>
                     <a class="nav-link" href="./menu.html">Menu</a>
                     <a class="nav-link">Order Status</a>
-                    <a class="nav-link">Contact Us</a>
+                    <a class="nav-link" href="./contact-us.html">Contact Us</a>
                 </div>
             </nav>
         `;
@@ -44,7 +44,7 @@ class Header extends HTMLElement {
                     background-size: cover; 
                 \">
                 <main-nav></main-nav>
-                <h1 id="WOTD" class="flexbox-center font-light">${this.innerHTML}</h1>
+                <h1 class="flexbox-center font-light">${this.innerHTML}</h1>
             </header>
         `;
 

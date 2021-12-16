@@ -23,7 +23,7 @@ const pages = [
     new HtmlWebpackPlugin({
         template: "./contact-us.html",
         filename: "contact-us.html",
-        chunks: ["component"],
+        chunks: ["contact", "component"],
     }),
 ]
 
@@ -49,6 +49,7 @@ module.exports = {
         ],
         menu: ["./menu.css", "./menu_a.png"],
         custom_menu: ["./custom_menu.js", "./custom_menu.css"],
+        contact: ["./contact.css", "./banner2.png"]
     },
     output: {
         filename: "[name].[contenthash].js",
