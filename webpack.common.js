@@ -25,6 +25,11 @@ const pages = [
         filename: "contact-us.html",
         chunks: ["contact", "component"],
     }),
+    new HtmlWebpackPlugin({
+        template: "./order-status.html",
+        filename: "order-status.html",
+        chunks: ["order", "component"],
+    }),
 ]
 
 const plugins = [
@@ -49,7 +54,8 @@ module.exports = {
         ],
         menu: ["./menu.css", "./menu_a.png"],
         custom_menu: ["./custom_menu.js", "./custom_menu.css"],
-        contact: ["./contact.css", "./banner2.png"]
+        contact: ["./contact.css", "./banner2.png"],
+        order: ["./order.css", "./confused.png", "./search.svg"]
     },
     output: {
         filename: "[name].[contenthash].js",
