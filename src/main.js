@@ -20,7 +20,7 @@ class HeaderNav extends HTMLElement {
                     </object>
                 </a>
                 <div class="link-container flexbox-space-between">
-                    <a class="nav-link">About Us</a>
+                    <a class="nav-link" href="./about-us.html">About Us</a>
                     <a class="nav-link" href="./menu.html">Menu</a>
                     <a class="nav-link" href="./order-status.html">Order Status</a>
                     <a class="nav-link" href="./contact-us.html">Contact Us</a>
