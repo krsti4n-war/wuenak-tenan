@@ -10,6 +10,12 @@ const pages = [
         chunks: ["index", "component"],
     }),
     new HtmlWebpackPlugin({
+        template: "./about-us.html",
+        filename: "about-us.html",
+        //    favicon: './favicon.svg'
+        chunks: ["about", "component"],
+    }),
+    new HtmlWebpackPlugin({
         template: "./menu.html",
         filename: "menu.html",
         //    favicon: './favicon.svg'
@@ -59,6 +65,7 @@ module.exports = {
             "./reviewer3.png",
             "./banner.png"
         ],
+        about: ["./about.css"],
         menu: [
             "./menu.css", 
             "./menu_kotak_a.png",
