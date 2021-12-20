@@ -105,7 +105,7 @@ class MenuBundle extends HTMLElement {
                 <div class="flexbox-row">
                     <div class="flexbox-column">
                         <h3>${this.getAttribute("title")}</h3>
-                        <p>${this.innerText}</p>
+                        <p>${this.innerHTML}</p>
                     </div>
                     <button class="button-primary">
                         Add to Cart
@@ -114,7 +114,7 @@ class MenuBundle extends HTMLElement {
             </section>
         `;
 
-        this.innerText = "";
+        this.innerHTML = "";
         this.appendChild(this.wrapper);
     }
 };
