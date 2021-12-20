@@ -114,7 +114,7 @@ class MenuBundle extends HTMLElement {
             </section>
         `;
 
-        this.innerText = "";
+        this.innerHTML = "";
         this.appendChild(this.wrapper);
     }
 };
